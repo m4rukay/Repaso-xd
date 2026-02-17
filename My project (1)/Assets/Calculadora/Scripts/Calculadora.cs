@@ -158,5 +158,38 @@ public class Calculadora : MonoBehaviour
             resultText.text = resultText.text + "0";
         }
     }
+
+    public void EqualOper()
+    {
+        float answer = 0f;
+        num2 = float.Parse(resultText.text);
+
+        if (operation == "+")
+        {
+            answer = num1 + num2;
+            resultText.text = answer.ToString();
+        }
+
+
+        if (operation == "-")
+        {
+            answer = num1 - num2;
+            resultText.text = answer.ToString();
+        }
+
+
+        if (operation == "*")
+        {
+            answer = num1 * num2;
+            resultText.text = answer.ToString();
+        }
+
+
+        if (operation == "/")
+        {
+            answer = num1 / num2;
+            resultText.text = answer.ToString();
+        }
+    }
 }
 

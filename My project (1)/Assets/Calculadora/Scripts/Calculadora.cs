@@ -226,5 +226,13 @@ public class Calculadora : MonoBehaviour
         float q = float.Parse(resultText.text);
         resultText.text = Convert.ToString(-1 * q);
     }
+
+    public void btnDec()
+    {
+        if (!resultText.text.Contains("."))
+        {
+            resultText.text = resultText.text + ".";
+        }
+    }
 }
 

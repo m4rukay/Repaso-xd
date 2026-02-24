@@ -191,5 +191,21 @@ public class Calculadora : MonoBehaviour
             resultText.text = answer.ToString();
         }
     }
+
+    public void btnClear()
+    {
+        resultText.text = "0";
+    }
+
+    public void btnEClear()
+    {
+        resultText.text = "0";
+        string f, s;
+        f = Convert.ToString(num1);
+        s = Convert.ToString(num2);
+
+        f = "";
+        s = "";
+    }
 }
 

@@ -207,5 +207,18 @@ public class Calculadora : MonoBehaviour
         f = "";
         s = "";
     }
+
+    public void btnBackSpace()
+    {
+        if (resultText.text.Length > 0) 
+        {
+            resultText.text = resultText.text.Remove(resultText.text.Length - 1, 1);
+        }
+
+        if (resultText.text == "")
+        {
+            resultText.text = "0";
+        }
+    }
 }
 

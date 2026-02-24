@@ -220,5 +220,11 @@ public class Calculadora : MonoBehaviour
             resultText.text = "0";
         }
     }
+
+    public void plusMinus ()
+    {
+        float q = float.Parse(resultText.text);
+        resultText.text = Convert.ToString(-1 * q);
+    }
 }
 
